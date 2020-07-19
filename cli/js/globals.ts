@@ -28,6 +28,7 @@ import * as readableStream from "./web/streams/readable_stream.ts";
 import * as transformStream from "./web/streams/transform_stream.ts";
 import * as queuingStrategy from "./web/streams/queuing_strategy.ts";
 import * as writableStream from "./web/streams/writable_stream.ts";
+import { test as mcgalaxyTest } from "./ops/mcgalaxy.ts";
 
 // These imports are not exposed and therefore are fine to just import the
 // symbols required.
@@ -209,6 +210,7 @@ export const windowOrWorkerGlobalScopeMethods = {
   // queueMicrotask is bound in Rust
   setInterval: writable(timers.setInterval),
   setTimeout: writable(timers.setTimeout),
+  test: writable(mcgalaxyTest),
 };
 
 // Other properties shared between WindowScope and WorkerGlobalScope

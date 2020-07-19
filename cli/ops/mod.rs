@@ -15,6 +15,7 @@ pub mod fs;
 pub mod fs_events;
 pub mod idna;
 pub mod io;
+pub mod mcgalaxy;
 pub mod net;
 #[cfg(unix)]
 mod net_unix;
