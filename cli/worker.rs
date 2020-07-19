@@ -259,22 +259,12 @@ impl MainWorker {
       ops::runtime_compiler::init(isolate, &state);
       ops::errors::init(isolate, &state);
       ops::fetch::init(isolate, &state);
-      ops::fs::init(isolate, &state);
-      ops::fs_events::init(isolate, &state);
       ops::idna::init(isolate, &state);
       ops::io::init(isolate, &state);
-      ops::plugin::init(isolate, &state);
-      ops::net::init(isolate, &state);
-      ops::tls::init(isolate, &state);
-      ops::os::init(isolate, &state);
       ops::permissions::init(isolate, &state);
-      ops::process::init(isolate, &state);
       ops::random::init(isolate, &state);
-      ops::repl::init(isolate, &state);
       ops::resources::init(isolate, &state);
-      ops::signal::init(isolate, &state);
       ops::timers::init(isolate, &state);
-      ops::tty::init(isolate, &state);
       ops::worker_host::init(isolate, &state);
 
       ops::mcgalaxy::init(isolate, &state);

@@ -15,10 +15,6 @@ pub fn init(i: &mut CoreIsolate, s: &State) {
     "op_revoke_permission",
     s.stateful_json_op(op_revoke_permission),
   );
-  i.register_op(
-    "op_request_permission",
-    s.stateful_json_op(op_request_permission),
-  );
 }
 
 #[derive(Deserialize)]

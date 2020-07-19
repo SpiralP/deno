@@ -130,17 +130,8 @@ impl WebWorker {
 
       if has_deno_namespace {
         ops::runtime_compiler::init(isolate, &state);
-        ops::fs::init(isolate, &state);
-        ops::fs_events::init(isolate, &state);
-        ops::plugin::init(isolate, &state);
-        ops::net::init(isolate, &state);
-        ops::tls::init(isolate, &state);
-        ops::os::init(isolate, &state);
         ops::permissions::init(isolate, &state);
-        ops::process::init(isolate, &state);
         ops::random::init(isolate, &state);
-        ops::signal::init(isolate, &state);
-        ops::tty::init(isolate, &state);
       }
     }
 
